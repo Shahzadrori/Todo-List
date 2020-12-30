@@ -9,11 +9,11 @@ const List = () => {
     <>
         <div className='outer'>
             <div className='inner'>
-            <br/>
                 <h1>Todo List</h1>
-                <br/>
+                <div className='btn'>
                 <input type='text' placeholder='Enter the task' required />
                 <button type='submit'>+</button>
+                </div>
             </div>
         </div>
     </>
