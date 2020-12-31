@@ -63,11 +63,7 @@ button:hover{
     background-color: palegreen;
 }
  li{
-     position: relative;
-    display: flex;
-    padding-left: 0px;
-    text-align: center;
     margin-right: 22rem;
     font-size: 18px;
-    width: 100%;
+    
 }
