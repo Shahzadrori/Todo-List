@@ -12,8 +12,11 @@ const List = () => {
                 <h1>Todo List</h1>
                 <div className='btn'>
                 <input type='text' placeholder='Enter the task' required />
-                <button type='submit'>+</button>
+                <button type='submit'>+</button> 
                 </div>
+                <ol>
+                    <li>Apple</li>
+                </ol>
             </div>
         </div>
     </>

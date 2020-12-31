@@ -21,26 +21,25 @@ div.inner{
     box-shadow: 5px 5px 25px  rgba(0,0, 0, 0.4) ;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 h1{
-    top: 0%;
     font-size: 40px;
+    top: 0%;
     color: green;
-    margin-top: -300px;
     background-color:turquoise;
     width: 100%;
     text-align: center;
 }
 div.btn{
-    display:flex;
-flex-direction:row ;
-}
+display: flex;
+flex-direction: row;
+} 
 input{
-    width: 70%;
+    width: 15rem;
     padding: 7px;
     margin-right: 80px;
+    margin-left: 80px;
     outline: none;
     border: none;
     border-bottom: 2px solid aqua;
@@ -49,14 +48,24 @@ input{
     color: slategrey;
 }
 button{
+    min-height: 40px;
+    width: 40px;
     border-radius: 80%;
-    padding: 10px;
     border: 1px solid;
     outline: none;
-    font-size: 25px;
+    font-size: 35px;
     box-shadow: 1px 2px 2px ;
+    margin-right:100px ;
 
 }
 button:hover{
     background-color: palegreen;
+}
+ li{
+     position: relative;
+    display: flex;
+    padding-left: 0px;
+    text-align: center;
+    margin-right: 22rem;
+    font-size: 18px;
 }
