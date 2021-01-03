@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import './todo.css';
 
+
 const List = () => {
     const [name,setname] = useState("");
     const [item,setitem] = useState([
-        
     ])
 
     const Inp = (val) => {
@@ -15,7 +15,7 @@ const List = () => {
 
     return(
     <>
-        <div className='outer'>
+        {/* <div className='outer'> */}
             <div className='inner'>
                 <h1>Todo List</h1>
                 <div className='btn'>
@@ -27,7 +27,7 @@ const List = () => {
                     <li>{name}</li>
                 </ul>
             </div>
-        </div>
+        {/* </div> */}
     </>
     )
 }
