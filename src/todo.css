@@ -12,11 +12,27 @@ div.inner{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 50vh;
+    height: 70vh;
     width: 50vh;
     margin-top: 100px;
-
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 h1{
-   align-items: top;
+    text-align: center;
+    margin-top: 10px;
+    background-color: grey;
+    width: 100%;
+}
+div.btn{
+    display: flex;
+    flex-direction: row;
+}
+#inp{
+    left: 0%;
+    margin-right: 4rem;
+    padding: 5px;
 }

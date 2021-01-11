@@ -3,32 +3,47 @@ import './todo.css';
 
 
 const List = () => {
-    const [name,setname] = useState("");
-    const [item,setitem] = useState([
+    const [item,setitem] = useState();
+    const [subitems,setsubitems] = useState([
     ])
 
     const Inp = (val) => {
-        setname(val.target.value);
+        setitem(val.target.value);
     }
+    const Sub = ()=>{
+        setsubitems((oldval) =>{
+            return (
+                [...oldval,item]
+            )
+        });
+        setitem('')
+      };
+   
 
 
 
     return(
     <>
-        {/* <div className='outer'> */}
+        <div className='outer'>
             <div className='inner'>
                 <h1>Todo List</h1>
                 <div className='btn'>
-                <input type='text' placeholder='Enter the task' onChange = {Inp} required />
-                <button type='submit'>+</button> 
+                <input id='inp' type='text' placeholder='Enter the task' onChange = {Inp} value={item} required />
+                <button type='button' onClick={Sub}>+</button> 
                 </div>
     
                 <ul>
-                    <li>{name}</li>
+                {subitems.map((oldval)=>{
+                    return <li>{oldval}</li>
+                })
+                }
                 </ul>
             </div>
-        {/* </div> */}
+        </div>
     </>
     )
-}
+            }
+
+
+
 export default List;
