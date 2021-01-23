@@ -7,7 +7,7 @@ import './todo.css';
 const List = () => {
     const [item, setitem] = useState('');
     const [subitems, setsubitems] = useState([]);
-    const Sub = () => {
+    const Add = () => {
         if(item !== ''){
         setsubitems((oldval) => {
             return (
@@ -33,12 +33,15 @@ const List = () => {
         <>
 
             <div className='inner'>
+            <div className='top'>
                 <h1>Todo List</h1>
                 <div className='btn'>
-                    <input id='inp' type='text' placeholder='Enter the task' onChange={(eve) => setitem(eve.target.value)} value={item} required />
-                    <AddBoxIcon className='btn-s' onClick={Sub}>+</AddBoxIcon>
+                    <input id='inp' type='text' placeholder='Enter the task' onChange={(eve) => setitem(eve.target.value)} value={item}  />
+                    <AddBoxIcon className='add' onClick={Add} /> 
+                    <button onClick={()=> setitem('')}>Clear</button>
+                    </div>
                 </div>
-
+                 <div className='list'> 
                 <ul>
                     {subitems.map((oldval, index) => {
                         return (
@@ -54,6 +57,7 @@ const List = () => {
                     })
                     }
                 </ul>
+                </div>
             </div>
         </>
     )
