@@ -4,7 +4,7 @@ const Li= (props)=>{
     return(
         <>
     <div className='dis'>
-    <HighlightOffIcon className='btn-a' onClick={()=>{
+    <HighlightOffIcon className='' onClick={()=>{
         props.onselect(props.id)
     }} />.
     <li>{props.text}</li>
